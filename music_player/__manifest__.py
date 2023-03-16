@@ -24,14 +24,19 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
+         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
+    'assets':{
+        'web.assets_backend':[
+            'music_player/static/app.js',
+        ]
+    },
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-    'installable': True,
-    'application': True,
+    'installable':True,
+    'application':True,
 }
